@@ -44,11 +44,11 @@ public class Application {
             List<Employee> employees = new ArrayList<>(employeeDAO.readAllEmployee());
             for (Employee employee : employees) {
                 System.out.printf("id - %d, first_name - %s, last_name - %s, gender - %s, age - %d, city - %s \n",
-                        employee.getId(), employee.getFirst_name(),
-                        employee.getLast_name(),
+                        employee.getId(), employee.getFirstName(),
+                        employee.getLastName(),
                         employee.getGender(),
                         employee.getAge(),
-                        employee.getCity().getCity_name());
+                        employee.getCity().getCityName());
             }
 
             employeeDAO.updateEmployee(20, "Mike", "Hit", "Male", 29, 1);
