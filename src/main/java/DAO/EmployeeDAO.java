@@ -7,13 +7,13 @@ import java.util.List;
 
 public interface EmployeeDAO {
 
-    void addEmployee(Employee employee) throws SQLException;
+    void addEmployee(Employee employee);
 
-    Employee readEmployeeById(int id) throws SQLException;
+    Employee readEmployeeById(int id);
 
-    List<Employee> readAllEmployee() throws SQLException;
+    List<Employee> readAllEmployee();
 
-    void updateEmployee(int id, String firstName, String lastName, String gender, int age, int cityId) throws SQLException;
+    void updateEmployee(Employee employee);
 
-    void deleteById(int id) throws SQLException;
+    void delete(Employee employee);
 }
