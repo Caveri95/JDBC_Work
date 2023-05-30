@@ -22,8 +22,34 @@
       <version>42.6.0</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.26</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>5.6.14.Final</version>
+    </dependency>
+
+
+
   </dependencies>
   <build>
     <finalName>JDBC_Work</finalName>
+    <plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <configuration>
+        <source>11</source>
+        <target>11</target>
+      </configuration>
+    </plugin>
+  </plugins>
   </build>
 </project>
