@@ -1,19 +1,18 @@
-package DAO;
+package service;
 
 import model.Employee;
 
-import java.sql.SQLException;
 import java.util.List;
 
 public interface EmployeeDAO {
 
-    void addEmployee(Employee employee);
+    Employee addEmployee(Employee employee);
 
     Employee readEmployeeById(int id);
 
     List<Employee> readAllEmployee();
 
-    void updateEmployee(Employee employee);
+    Employee updateEmployee(Employee employee);
 
-    void delete(Employee employee);
+    void deleteEmployee(Employee employee);
 }

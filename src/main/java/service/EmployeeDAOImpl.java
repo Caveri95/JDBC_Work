@@ -1,4 +1,4 @@
-package DAO;
+package service;
 
 import model.Employee;
 import org.hibernate.Session;
@@ -10,36 +10,42 @@ import java.util.List;
 public class EmployeeDAOImpl implements EmployeeDAO {
 
     @Override
-    public void addEmployee(Employee employee) {
+    public Employee addEmployee(Employee employee) {
         try (Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession()) {
             Transaction transaction = session.beginTransaction();
             session.save(employee);
             transaction.commit();
         }
+        return employee;
     }
 
     @Override
     public Employee readEmployeeById(int id){
-        return HibernateSessionFactoryUtil.getSessionFactory().openSession().get(Employee.class, id);
-    }
-
-    @Override
-    public List<Employee> readAllEmployee() {
-        List<Employee> employees = (List<Employee>) HibernateSessionFactoryUtil.getSessionFactory().openSession().createQuery("FROM Employee").list();
-        return employees;
-    }
-
-    @Override
-    public void updateEmployee(Employee employee) {
-        try (Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession()) {
-            Transaction transaction = session.beginTransaction();
-            session.update(employee);
-            transaction.commit();
+        try (Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession()){
+            return session.get(Employee.class, id);
         }
     }
 
     @Override
-    public void delete(Employee employee) {
+    public List<Employee> readAllEmployee() {
+        try (Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession()) {
+            return session.createQuery("FROM Employee ").getResultList();
+        }
+    }
+
+    @Override
+    public Employee updateEmployee(Employee employee) {
+        Employee updated;
+        try (Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession()) {
+            Transaction transaction = session.beginTransaction();
+            updated = (Employee) session.merge(employee);
+            transaction.commit();
+        }
+        return updated;
+    }
+
+    @Override
+    public void deleteEmployee(Employee employee) {
         try (Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession()) {
             Transaction transaction = session.beginTransaction();
             session.delete(employee);
