@@ -1,13 +1,15 @@
-package service;
+package com.bestapp.hibernate.services.impl;
 
-import model.City;
+import com.bestapp.hibernate.services.api.CityService;
+import com.bestapp.hibernate.model.City;
+import com.bestapp.hibernate.utils.HibernateSessionFactoryUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import utils.HibernateSessionFactoryUtil;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
-public class CityDAOImpl implements CityDAO{
+@Service
+public class CityServiceImpl implements CityService {
     @Override
     public City addCity(City city) {
         try (Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession()) {

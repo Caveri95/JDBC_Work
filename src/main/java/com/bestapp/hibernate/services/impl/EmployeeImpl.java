@@ -1,13 +1,15 @@
-package service;
+package com.bestapp.hibernate.services.impl;
 
-import model.Employee;
+import com.bestapp.hibernate.services.api.EmployeeService;
+import com.bestapp.hibernate.model.Employee;
+import com.bestapp.hibernate.utils.HibernateSessionFactoryUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import utils.HibernateSessionFactoryUtil;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
-public class EmployeeDAOImpl implements EmployeeDAO {
+@Service
+public class EmployeeImpl implements EmployeeService {
 
     @Override
     public Employee addEmployee(Employee employee) {

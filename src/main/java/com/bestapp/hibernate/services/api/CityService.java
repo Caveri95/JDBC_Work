@@ -1,10 +1,10 @@
-package service;
+package com.bestapp.hibernate.services.api;
 
-import model.City;
+import com.bestapp.hibernate.model.City;
 
 import java.util.List;
 
-public interface CityDAO {
+public interface CityService {
 
     City addCity(City city);
 

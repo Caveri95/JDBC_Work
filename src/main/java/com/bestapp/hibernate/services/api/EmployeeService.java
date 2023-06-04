@@ -1,10 +1,10 @@
-package service;
+package com.bestapp.hibernate.services.api;
 
-import model.Employee;
+import com.bestapp.hibernate.model.Employee;
 
 import java.util.List;
 
-public interface EmployeeDAO {
+public interface EmployeeService {
 
     Employee addEmployee(Employee employee);
 

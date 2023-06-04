@@ -1,12 +1,10 @@
-package utils;
+package com.bestapp.hibernate.utils;
 
-import model.City;
-import model.Employee;
+import com.bestapp.hibernate.model.City;
+import com.bestapp.hibernate.model.Employee;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
-
-import java.awt.print.Book;
 
 public class HibernateSessionFactoryUtil {
     private static SessionFactory sessionFactory;
