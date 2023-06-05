@@ -47,11 +47,14 @@ public class EmployeeImpl implements EmployeeService {
     }
 
     @Override
-    public void deleteEmployee(Employee employee) {
-        try (Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession()) {
-            Transaction transaction = session.beginTransaction();
-            session.delete(employee);
-            transaction.commit();
-        }
+    public boolean deleteEmployeeById(int id) {
+        if (readEmployeeById(id) != null) {
+            try (Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession()) {
+                Transaction transaction = session.beginTransaction();
+                session.delete(session.get(Employee.class, id));
+                transaction.commit();
+                return true;
+            }
+        } else return false;
     }
 }

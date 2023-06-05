@@ -48,11 +48,15 @@ public class CityServiceImpl implements CityService {
     }
 
     @Override
-    public void deleteCity(City city) {
-        try (Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession()) {
-            Transaction transaction = session.beginTransaction();
-            session.delete(city);
-            transaction.commit();
-        }
+    public boolean deleteCityById(int id) {
+        if (readCityById(id) != null) {
+            try (Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession()) {
+                Transaction transaction = session.beginTransaction();
+                session.delete(readCityById(id));
+                transaction.commit();
+            }
+            return true;
+        } else
+            return false;
     }
 }

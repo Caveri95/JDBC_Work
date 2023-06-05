@@ -4,21 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ee480e7-6593-4fbe-84ac-4966317e6824" name="Changes" comment="Создана связь между таблицами, настроены отношения, добавлен слой DAO для City">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/controllers/EmployeeController.java" afterDir="false" />
+    <list default="true" id="3ee480e7-6593-4fbe-84ac-4966317e6824" name="Changes" comment="Сделал spring версию приложения">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/controllers/CityController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/model/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/model/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/CityDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/services/api/CityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/CityDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/services/impl/CityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/EmployeeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/services/api/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/EmployeeDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/services/impl/EmployeeImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/HibernateSessionFactoryUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/utils/HibernateSessionFactoryUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/controllers/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/controllers/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/model/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/model/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/services/api/CityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/services/api/CityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/services/api/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/services/api/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/services/impl/CityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/services/impl/CityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/services/impl/EmployeeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/services/impl/EmployeeImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +61,8 @@
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "52a8dfd85c78589fff54113c129c423d"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -130,6 +126,7 @@
       <workItem from="1685464313391" duration="8335000" />
       <workItem from="1685729993033" duration="879000" />
       <workItem from="1685775553919" duration="10051000" />
+      <workItem from="1685987332725" duration="7226000" />
     </task>
     <task id="LOCAL-00001" summary="JDBC">
       <created>1684177352125</created>

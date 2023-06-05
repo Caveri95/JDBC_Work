@@ -7,9 +7,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.List;
-@AllArgsConstructor
-@Getter
-@Setter
+
 @Entity
 @Table(name = "city")
 public class City {
@@ -36,6 +34,20 @@ public class City {
 
     public City() {
 
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+
+
+    public String getCityName() {
+        return cityName;
+    }
+
+    public void setCityName(String cityName) {
+        this.cityName = cityName;
     }
 
     @Override
