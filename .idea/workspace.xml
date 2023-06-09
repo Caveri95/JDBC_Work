@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ee480e7-6593-4fbe-84ac-4966317e6824" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+    <list default="true" id="3ee480e7-6593-4fbe-84ac-4966317e6824" name="Changes" comment="Сделал spring версию приложения">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/controllers/CityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/controllers/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/controllers/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/model/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/model/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/services/api/CityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/services/api/CityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/services/api/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/services/api/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/services/impl/CityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/services/impl/CityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/services/impl/EmployeeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bestapp/hibernate/services/impl/EmployeeImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,11 +23,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Tag Library Descriptor" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="homeWork" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -43,15 +50,60 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "project.structure.last.edited": "Modules",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "52a8dfd85c78589fff54113c129c423d"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\AlekseyTaniaUra\IdeaProjects\JDBC_Work\src\main\java\com\bestapp\hibernate" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Application" />
+      <module name="JDBC_Work" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="JDBC_Work" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bestapp.hibernate.Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bestapp.hibernate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="Application.Application" />
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -60,8 +112,65 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684175569449</updated>
-      <workItem from="1684175572613" duration="876000" />
+      <workItem from="1684175572613" duration="2649000" />
+      <workItem from="1684255288518" duration="8595000" />
+      <workItem from="1684334355997" duration="3440000" />
+      <workItem from="1684340861986" duration="10014000" />
+      <workItem from="1684427287841" duration="1986000" />
+      <workItem from="1684572614034" duration="2245000" />
+      <workItem from="1684680469941" duration="2722000" />
+      <workItem from="1684760707032" duration="4025000" />
+      <workItem from="1684949571288" duration="2684000" />
+      <workItem from="1685266251665" duration="5615000" />
+      <workItem from="1685379809249" duration="8915000" />
+      <workItem from="1685464313391" duration="8335000" />
+      <workItem from="1685729993033" duration="879000" />
+      <workItem from="1685775553919" duration="10051000" />
+      <workItem from="1685987332725" duration="7226000" />
     </task>
+    <task id="LOCAL-00001" summary="JDBC">
+      <created>1684177352125</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684177352125</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Выполнена задача №1">
+      <created>1684267630944</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684267630945</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Выполнена задача №2">
+      <created>1684353285684</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684353285684</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Исправлены названия полей">
+      <created>1684427797379</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684427797379</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Добавлен Hibernate">
+      <created>1684702331604</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684702331604</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Создана связь между таблицами, настроены отношения, добавлен слой DAO для City">
+      <created>1685473240772</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685473240772</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -72,10 +181,31 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Spring" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="JDBC" />
+    <MESSAGE value="Выполнена задача №1" />
+    <MESSAGE value="Выполнена задача №2" />
+    <MESSAGE value="Исправлены названия полей" />
+    <MESSAGE value="Добавлен Hibernate" />
+    <MESSAGE value="Создана связь между таблицами, настроены отношения, добавлен слой DAO для City" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создана связь между таблицами, настроены отношения, добавлен слой DAO для City" />
   </component>
 </project>
